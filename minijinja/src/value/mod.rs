@@ -375,7 +375,7 @@ impl fmt::Display for Value {
                 }
             }
             ValueRepr::Char(val) => write!(f, "{}", val),
-            ValueRepr::None => write!(f, "none"),
+            ValueRepr::None => write!(f, ""),
             ValueRepr::I128(val) => write!(f, "{}", { val.0 }),
             ValueRepr::String(val, _) => write!(f, "{}", val),
             ValueRepr::Bytes(val) => write!(f, "{}", String::from_utf8_lossy(val)),
