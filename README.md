@@ -29,6 +29,10 @@ minimal v0.1.0 (examples/minimal)
     └── serde v1.0.144
 ```
 
+** The main difference **
+
+This implementation inserts empty string instead "none" for None values in contexts.
+
 **Goals:**
 
 * [Well documented](https://docs.rs/minijinja), compact API
